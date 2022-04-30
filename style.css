@@ -69,7 +69,7 @@ body{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: repeat(3, 144px);
   justify-content: center;
-  max-width: 966px;
+  max-width: 998px;
 
 }
 
