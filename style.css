@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{scroll-behavior:smooth;}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; 
+    }
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    BACKGROUND: #f9f9f9;
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* start header */
+ .container{}
+ .container .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 105PX;
+ }
+ .container .text p{
+  font-size: 23PX;
+  COLOR: #a3a3a3;
+ }
+ .container .text .tow{
+     font-size: 12PX;
+     TEXT-ALIGN: center;
+
+ }
+
+/* end header */
+/* start CARDs */
+.cards{
+  margin-top: 32PX;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, 144px);
+  justify-content: center;
+  max-width: 966px;
+
+}
+
+@media (max-width: 880px) {
+  .cards{
+    display: flex;
+    max-width: 289px;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1280px) {
+  .cards{
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    padding: 31px;
+    margin: auto;
+  }
+
+}
+
+
+
+.container{
+  WIDTH: fit-content;
+}
+.cards .container .Card{
+  border-top: rgb(255, 230, 0) solid 4px;
+  box-shadow: 0px 0px 9px #aaaaaa;
+  border-radius: 9PX;
+}
+ .super .container .Card{
+  border-top: rgb(60, 226, 255) solid 4px;
+}
+.team .container .Card{
+  border-top: rgb(255, 91, 91) solid 4px;
+
+}
+.calc .container .Card{
+  border-top: rgb(0, 52, 165) solid 4px;
+}
+
+
+.cards .container .Card .text {
+  margin: 0PX;
+  display: flex;
+  /* padding: 24PX; */
+  align-items: flex-start;
+}
+.cards .container .Card .text h2{
+  FONT-SIZE: 21PX;
+  PADDING: 28PX;
+}
+.cards .container .Card .text P{
+    font-size: 12PX;
+    PADDING: 25PX;
+    margin-top: -44PX;
+}
+.cards .container .Card .image {
+      display: flex;
+      justify-content: end;
+      PADDING: 29PX;
+}
+.cards .container .Card .image img{}
+
+
+/* End CARDs */
+.super{
+  display: grid;
+  grid-row-start: 2;
+}
+.team{
+  grid-column-start: 2;
+}
+.karma{
+      /* GAP: 60PX; */
+      grid-column-start: 2;
+      grid-row-start: 3;
+}
+.calc{
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.attribution{
+  font-size: 12px;
+  text-align: center;
+  margin-top: 76px;
+}
